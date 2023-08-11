@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This tool allows you to play local videos in Chrome and use it to present videos with audio in Google Meet.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Your Local Video Player</h1>
+        
+        <div class="controls">
+            <table>
+                <tr>
+                    <td style="width: 40%;">
+                        <input type="file" id="videoInput" class="file">
+                    </td>
+                    <td style="width: 30%;">
+                        <button onclick="loadVideo()">Load_Video</button>          
+                    </td>
+                    <td style="width: 30%;">
+                        <button onclick="toggleDarkMode()" class="dark-mode">Dark_Mode</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        
+        <video id="videoPlayer" controls>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="footer">
+        Developed by Aditya Pal
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
